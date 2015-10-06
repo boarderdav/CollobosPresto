@@ -21,7 +21,8 @@ Copyright (c) 2014 Daniel Eden
 
 /* @media (min-width: @screen-md-min) */
 /* @media (min-width: 990px) */
-@media (min-width: 1023px {
+
+@media (min-width: 1023px) {
   .text-md-left { text-align: left; }
   .text-md-right { text-align: right; }
   .text-md-center { text-align: center; }
