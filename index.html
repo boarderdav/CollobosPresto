@@ -64,15 +64,16 @@
   </div>
   <label class="pure-overlay" for="pure-toggle-top" data-overlay="top"></label>
 </div>
+
 </div> <!-- ngInclude: 'views/shared/header-mobile.html' -->
 <div ng-include="views/shared/header-mobile.html" ng-controller="HeaderCtrl" class="hidden-sm hidden-md hidden-lg">
 <div class="pure-container" data-effect="pure-effect-slide">
   <input type="checkbox" id="pure-toggle-left" class="pure-toggle" data-toggle="left">
   <label class="pure-toggle-label" for="pure-toggle-left" data-toggle-label="left">
-    <span class="nav-link uppercase text-thin">Menu</span>
+    <span class="pure-toggle-icon"></span>
   </label>
-  <a class="trial-link" href="index.html"> <span class="nav-link text-orange uppercase text-thin">Trial</span></a>
-  <a class="trial-link dis-link" href="https://collobos-staging.herokuapp.com/distributors"> <span class="nav-link text-orange uppercase text-thin">Distributors</span></a>
+  
+  
   <!--<a class="text-orange uppercase text-thin" href="/distributors">Distributors</a>-->
   <nav class="navbar navbar-top navbar-fixed-left">
   </nav>
@@ -81,6 +82,10 @@
   <div class="container">
     <div id="wrapper" class="row">
       <div class="col-md-2 col-xs-12">
+        
+        <h3><a class="trial-link" href="index.html"> <span class="nav-link text-orange uppercase text-thin">Trial</span></a></h3>
+        <h3><a class="trial-link dis-link" href="https://collobos-staging.herokuapp.com/distributors"> <span class="nav-link text-orange uppercase text-thin">Distributors</span></a></h3>
+        
         <h4 class="uppercase text-thin">Learn</h4>
         <p><a href="https://collobos-staging.herokuapp.com/learn-more">Presto</a></p>
         <p><a class="menu-item" href="https://collobos-staging.herokuapp.com/features">Features</a></p>
@@ -125,7 +130,7 @@
 <div class="header-slider">
   <div class="row row-align">
     <div class="col-xs-12 col-sm-10 col-md-6 text-center">
-      <img src="Images/presto-header-logo.png" style="max-width:300px; padding-top:28px; z-index:-1;" alt="header logo">
+      <img src="Images/presto-header-logo.png" style="max-width:300px; padding-top:30px; z-index:-1;" alt="header logo">
       <h1>Print. AirPlay. Web Shares.</h1>
       <h3 style="color:#808284">Enterprise. Education. Medical. Legal.</h3>
     </div>
