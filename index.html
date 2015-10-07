@@ -65,7 +65,7 @@
   <label class="pure-overlay" for="pure-toggle-top" data-overlay="top"></label>
 </div>
 </div> <!-- ngInclude: 'views/shared/header-mobile.html' -->
-<div ng-include="views/shared/header-mobile.html" ng-controller="HeaderCtrl" class="hidden-sm hidden-md hidden-lg">
+<div ng-include="views/shared/header-mobile.html" ng-controller="HeaderCtrl" class="navbar-fixed-top hidden-sm hidden-md hidden-lg" style="background-color:#B8B8B8">
 <div class="pure-container" data-effect="pure-effect-slide">
   <input type="checkbox" id="pure-toggle-left" class="pure-toggle" data-toggle="left">
   <label class="pure-toggle-label" for="pure-toggle-left" data-toggle-label="left">
@@ -74,7 +74,7 @@
   <a class="trial-link" href="index.html"> <span class="nav-link text-orange uppercase text-thin">Trial</span></a>
   <a class="trial-link dis-link" href="https://collobos-staging.herokuapp.com/distributors"> <span class="nav-link text-orange uppercase text-thin">Distributors</span></a>
   <!--<a class="text-orange uppercase text-thin" href="/distributors">Distributors</a>-->
-  <nav class="navbar navbar-inverse navbar-fixed-left">
+  <nav class="navbar" style="min-height:60px">
   </nav>
   <div class="pure-drawer" data-position="left" style="overflow-y:auto">
     <!-- ngInclude: 'views/shared/menu.html' --><div ng-include="views/shared/menu.html"><div class="container-fluid menu">
@@ -127,7 +127,7 @@
     <div class="col-xs-12 col-sm-10 col-md-6 text-center">
       <img src="Images/presto-header-logo.png" style="max-width:300px; padding-top:25px; z-index:-1;" alt="header logo">
       <h1>Print. AirPlay. Web Shares.</h1>
-      <h3>Enterprise. Education. Medical. Legal.</h3>
+      <h3 style="color:#808284">Enterprise. Education. Medical. Legal.</h3>
     </div>
     <div class="col-xs-10 col-sm-10 col-md-5 text-xs-center mt-20">
       <img class="xs-height" src="Images/header-server-client-logos.png" alt="client logo">
