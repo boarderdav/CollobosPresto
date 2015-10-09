@@ -3570,13 +3570,14 @@ transform:translateY(-100%)
   min-height: 30em!important
 }
 .row-align {
-  display: -webkit-box-flex;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
   align-items: center;
   -webkit-justify-content: center;
-  justify-content: center
+  justify-content: center;
+  width: 100%;
+  display:block;
 }
 .col-top {
   -webkit-align-self: flex-start;
