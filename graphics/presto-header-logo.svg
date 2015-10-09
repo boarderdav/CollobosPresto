@@ -12,7 +12,8 @@
 <rect x="-89.5" y="235.4" class="st0" width="607.2" height="169.3"/>
 <g>
 	<rect x="-223" y="469.5" class="st0" width="261.8" height="73"/>
-	<text transform="matrix(1 0 0 1 -223.0407 535.6001)" class="st1 st2">Presto</text>
+	<rect x="-223" y="456.1" class="st0" width="257.4" height="89.9"/>
+	<text transform="matrix(1 0 0 1 -223.0407 535.6001)" class="st1 st2">Prest</text>
 	<circle class="st3" cx="-277.3" cy="501" r="43.3"/>
 	<g>
 		<path class="st4" d="M-292.7,502.8c-1.9-0.4-4-1.1-5.9-1c-3.4,0.2-6.6,2.5-8,5.6c-1.4,3.3,0.3,6.6,2.8,8.8

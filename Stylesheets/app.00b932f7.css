@@ -4,7 +4,7 @@
 }
 .pure-toggle-label:hover, .pure-toggle:focus~.pure-toggle-label, .pure-toggle[data-toggle=left]:checked~.pure-toggle-label[data-toggle-label=left], .pure-toggle[data-toggle=right]:checked~.pure-toggle-label[data-toggle-label=right], .pure-toggle[data-toggle=top]:checked~.pure-toggle-label[data-toggle-label=top] {
   border-color: #EEA833; /*#1fc08e* old green default color*/
-  color: #EEA833
+  color: #EEA833;
 }
 body, html {
   height: 100%
@@ -12,12 +12,12 @@ body, html {
 .pure-container {
   position: relative;
   height: 100%;
-  -webkit-overflow-scrolling: touch
+  -webkit-overflow-scrolling: touch;
 }
 .pure-toggle {
-  left: -9999px;
+  left: -9999999px;
   position: absolute;
-  top: -9999px
+  top: -9999999px
 }
 .pure-toggle-label {
   cursor: pointer;
@@ -32,7 +32,8 @@ body, html {
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
-  user-select: none
+  user-select: none;
+  /*background-image: url(../Images/menubar-02.svg);*/
 }
 .pure-toggle-label:hover .pure-toggle-icon, .pure-toggle-label:hover .pure-toggle-icon:after, .pure-toggle-label:hover .pure-toggle-icon:before {
   background-color: #EEA833
@@ -42,13 +43,14 @@ body, html {
   top: 50%;
   left: 50%;
   height: 4px;
-  width: 35px;
+  width: 30px;
   cursor: pointer;
   background: #5d809d;
   display: block;
   content: '';
-  transition: all 500ms ease-in-out
-}
+  transition: all 500ms ease-in-out;
+/*  background-image: url(../Images/menubar-02.svg);*/
+  }
 span.gray:before, span.orange:before {
   content: "• "
 }
@@ -3772,6 +3774,10 @@ p.large {
 .customers {
   margin-top: 3em;
   margin-bottom: 3em
+}
+.customers-6 {
+  margin-top: 6em;
+  margin-bottom: 0em;
 }
 .customers>.col-sm-3 {
   width: 21%;
