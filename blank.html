@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <!-- saved from url=(0047)https://collobos-staging.herokuapp.com/partners -->
-<html lang="en" ng-app="collobosApp"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style> <title>Collobos - Presto</title> <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL"> <!--<base href="/">--><base href="."> <link rel="stylesheet" href="Stylesheets/vendor.bb380458.css"> <link rel="stylesheet" href="Stylesheets/app.00b932f7.css">   
+<html lang="en" ng-app="collobosApp"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style> <title>Collobos - Presto</title> <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL"> <!--<base href="/">--><base href="."> <link rel="stylesheet" href="Stylesheets/vendor.bb380458.css"> <link rel="stylesheet" href="Stylesheets/app.00b932f7.css">  
 </head>
 <body> <!--[if lt IE 7]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]--> <!-- ngInclude: 'views/shared/header.html' -->
 <div ng-include="views/shared/header.html" ng-controller="HeaderCtrl" class="hidden-xs">
 <div class="pure-container" data-effect="pure-effect-slide">
   <input type="checkbox" id="pure-toggle-top" class="pure-toggle" data-toggle="top">
+      <!--START Moved Section inside pure container-->
   <label class="pure-toggle-label" for="pure-toggle-top" data-toggle-label="top">
     <span class="nav-link uppercase text-thin">Menu</span> 
   </label>
@@ -16,13 +17,18 @@
 
         <div class="brand text-center"> <a href="index.html"><img src="Images/nav-logo.svg" alt="navigation photo"></a></div>
         <ul class="nav navbar-nav navbar-right navbar-top">
-          <li><a class="text-orange uppercase text-thin" href="https://collobos-staging.herokuapp.com/distributors">Distributors</a></li>
+          <li><a class="text-orange uppercase text-thin" href="distributors.html">Distributors</a></li>
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> 
+  <!--MOVE SECTION INTO pure-drawer scroller section--> 
+<!--Put the START Moved section Back here-->
+
   <div class="pure-drawer" data-position="top" style="overflow-y:auto">
-    <!-- ngInclude: 'views/shared/menu.html' --><div ng-include="views/shared/menu.html;"><div class="container-fluid menu">
+    <!-- ngInclude: 'views/shared/menu.html' -->
+  <div ng-include="views/shared/menu.html;">
+  <div class="container-fluid menu">
   <div class="container">
     <div id="wrapper" class="row">
       <div class="col-md-2 col-xs-12">
@@ -33,7 +39,7 @@
       </div>
       <div class="col-md-2 col-xs-12">
         <h4 class="uppercase text-thin">Docs</h4>
-        <p><a href="index.html">Technical Guides Guides</a></p>
+        <p><a href="index.html">Technical Guides</a></p>
         <p><a href="index.html">Presto Deck</a></p>
       </div>
       <div class="clearfix visible-xs"></div>
@@ -45,7 +51,75 @@
       </div>
       <div class="col-md-2 col-xs-12">
         <h4 class="uppercase text-thin">Partners</h4>
-        <p><a href="blank.html">Distributors</a></p>
+        <p><a href="distributors.html">Distributors</a></p>
+        <p><a href="blank.html">Programs</a></p>
+      </div>
+      <div class="clearfix visible-xs"></div>
+      <div class="col-md-2 col-xs-12">
+        <h4 class="uppercase text-thin">Support</h4>
+        <p><a href="index.html">Americas</a></p>
+        <p><a href="index.html">UK/EU/EAME</a></p>
+        <p><a href="index.html">Asia/Pac</a></p>
+      </div>
+      <div class="col-md-2 col-xs-12">
+        <h4 class="uppercase text-thin">Account</h4>
+        <p><a href="index.html">Login</a></p>
+      </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ 
+</div>
+  
+  <label class="pure-overlay" for="pure-toggle-top" data-overlay="top"></label>
+  
+</div> <!--Back to div class="pure-container-->
+
+</div> <!-- ngInclude: Top views/shared/header.html section -->
+
+<div ng-include="views/shared/header-mobile.html" ng-controller="HeaderCtrl" class="hidden-sm hidden-md hidden-lg">
+<div class="pure-container" data-effect="pure-effect-slide">
+  <input type="checkbox" id="pure-toggle-left" class="pure-toggle" data-toggle="left">
+  <label class="pure-toggle-label" for="pure-toggle-left" data-toggle-label="left">
+    <span class="pure-toggle-icon"></span>
+  </label>
+  
+  
+  <!--<a class="text-orange uppercase text-thin" href="/distributors">Distributors</a>-->
+  <!--<nav class="navbar navbar-top navbar-fixed-left"></nav>-->
+  <div class="pure-drawer" data-position="left" style="overflow-y:auto; margin-top:0">
+    <!-- ngInclude: 'views/shared/menu.html' -->
+  <div ng-include="views/shared/menu.html">
+  <div class="container-fluid menu">
+  <div class="container">
+    <div id="wrapper" class="row">
+      <div class="col-md-2 col-xs-12">
+        
+        <h3 style="padding-top:24px"><a href="index.html"> <span class="text-orange uppercase text-thin">Trial</span></a></h3>
+        <h3 style="line-height:8px;padding-bottom:16px"><a href="distributors.html"> <span class="text-orange uppercase text-thin">Distributors</span></a></h3>
+        
+        
+        <h4 class="uppercase text-thin">Learn</h4>
+        <p><a href="index.html">Presto</a></p>
+        <p><a class="menu-item" href="LearnMore.html">Features</a></p>
+        <p><a href="blank.html">Videos</a></p>
+      </div>
+      <div class="col-md-2 col-xs-12">
+        <h4 class="uppercase text-thin">Docs</h4>
+        <p><a href="index.html">Technical Guides</a></p>
+        <p><a href="index.html">Presto Deck</a></p>
+      </div>
+      <div class="clearfix visible-xs"></div>
+      <div class="col-md-2 col-xs-12">
+        <h4 class="uppercase text-thin">Apps</h4>
+        <p><a href="https://itunes.apple.com/us/app/presto-connect/id1026233524?mt=8">iOS</a></p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.collobos.presto&hl=en">Android</a></p>
+        <p><a href="https://chrome.google.com/webstore/detail/presto/cocbbcnadafhmobecjmagdmjjppbnmao">Chrome</a></p>
+      </div>
+      <div class="col-md-2 col-xs-12">
+        <h4 class="uppercase text-thin">Partners</h4>
+        <p><a href="distributors.html">Distributors</a></p>
         <p><a href="blank.html">Programs</a></p>
       </div>
       <div class="clearfix visible-xs"></div>
@@ -64,78 +138,35 @@
 </div>
 </div>
   </div>
-  <label class="pure-overlay" for="pure-toggle-top" data-overlay="top"></label>
-</div>
-
-</div> <!-- ngInclude: 'views/shared/header-mobile.html' -->
-
-
-<div ng-include="views/shared/header-mobile.html" ng-controller="HeaderCtrl" class="hidden-sm hidden-md hidden-lg">
-<div class="pure-container" data-effect="pure-effect-slide">
-  <input type="checkbox" id="pure-toggle-left" class="pure-toggle" data-toggle="left">
-  <label class="pure-toggle-label" for="pure-toggle-left" data-toggle-label="left">
-    <span class="pure-toggle-icon"></span>
-  </label>
   
-  
-  <!--<a class="text-orange uppercase text-thin" href="/distributors">Distributors</a>-->
-  <nav class="navbar navbar-top navbar-fixed-left">
-  </nav>
-  <div class="pure-drawer" data-position="left" style="overflow-y:auto">
-    <!-- ngInclude: 'views/shared/menu.html' --><div ng-include="views/shared/menu.html">
-    <div class="container-fluid menu">
-  <div class="container">
-    <div id="wrapper" class="row">
-      <div class="col-md-2 col-xs-12">
-        
-        <h3><a class="trial-link" href="index.html"> <span class="nav-link text-orange uppercase text-thin">Trial</span></a></h3>
-        <h3><a class="trial-link dis-link" href="https://collobos-staging.herokuapp.com/distributors"> <span class="nav-link text-orange uppercase text-thin">Distributors</span></a></h3>
-        
-        <h4 class="uppercase text-thin">Learn</h4>
-        <p><a href="https://collobos-staging.herokuapp.com/learn-more">Presto</a></p>
-        <p><a class="menu-item" href="https://collobos-staging.herokuapp.com/features">Features</a></p>
-        <p><a href="index.html">Videos</a></p>
-      </div>
-      <div class="col-md-2 col-xs-12">
-        <h4 class="uppercase text-thin">Docs</h4>
-        <p><a href="index.html">User Guides</a></p>
-        <p><a href="index.html">Trouble Shooting</a></p>
-        <p><a href="index.html">Sales Deck</a></p>
-      </div>
-      <div class="clearfix visible-xs"></div>
-      <div class="col-md-2 col-xs-12">
-        <h4 class="uppercase text-thin">Apps</h4>
-        <p><a href="https://itunes.apple.com/us/app/presto-connect/id1026233524?mt=8">iOS</a></p>
-        <p><a href="https://play.google.com/store/apps/details?id=com.collobos.presto&hl=en">Android</a></p>
-        <p><a href="https://chrome.google.com/webstore/detail/presto/cocbbcnadafhmobecjmagdmjjppbnmao">Chrome</a></p>
-      </div>
-      <div class="col-md-2 col-xs-12">
-        <h4 class="uppercase text-thin">Partners</h4>
-        <p><a href="https://collobos-staging.herokuapp.com/partners">Program</a></p>
-      </div>
-      <div class="clearfix visible-xs"></div>
-      <div class="col-md-2 col-xs-12">
-        <h4 class="uppercase text-thin">Support</h4>
-        <p><a href="http://presto-support.collobos.com/">Presto</a></p>
-        <p><a href="index.html">FingerPrint</a></p>
-      </div>
-      <div class="col-md-2 col-xs-12">
-        <h4 class="uppercase text-thin">Account</h4>
-        <p><a href="index.html">Login</a></p>
-      </div>
+  <label class="pure-overlay" for="pure-toggle-left" data-overlay="left"></label>
+</div> <!-- div class="pure container"-->
+</div> <!-- ngView:   END OF HEADER --> 
+
+<div class="site-content" ng-view="">
+  <div class="row hidden-sm" style="padding-top:80px"></div>
+  <div class="container main-content">
+    <div class="row hero b-0 mh-20-em">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+            <h3>Partner With Us</h3>
+            <p class="large">We love partnering with innovative companies who provide cutting edge technology to
+              their customers. Interested in selling Presto? We’d like to speak with you.</p>
+            <p class="large"><a href="mailto:partners@collobos.com">partners@collobos.com</a></p>
+        </div>
     </div>
   </div>
-</div>
-  </div>
-  <label class="pure-overlay" for="pure-toggle-left" data-overlay="left"></label>
-</div>
-<!--</div>--> 
-<script async="" src="./blank_files/analytics.js"></script><script src="./blank_files/vendor.3abf3376.js"></script> <script src="./blank_files/app.0e8d2638.js"></script> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+
+
+
+<script async="" src="Scripts/analytics.js"></script>  <script src="Scripts/vendor.3abf3376.js"></script> <script src="Scripts/app.0e8d2638.js"></script> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-64921678-1', 'auto');</script> <script async="" src="./blank_files/adsbygoogle.js"></script> <!-- ngInclude: 'views/shared/footer.html' -->
+      ga('create', 'UA-64921678-1', 'auto');</script> <script async="" src="Scripts/adsbygoogle.js"></script> 
+      <!-- ngInclude: 'views/shared/footer.html' -->
       
+
 <div class="container">
   <div class="footer-social">
     <div class="row">
@@ -162,6 +193,8 @@
     </div>
   <!--</div>-->
 </div>
+</div>
+
   <script type="text/javascript">(function () {
         return window.SIG_EXT = {};
       })()</script>
