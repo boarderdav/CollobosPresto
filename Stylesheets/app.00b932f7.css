@@ -4024,6 +4024,17 @@ body {
 }
 
 
+.body-copy, .body-copy p {
+	font-family: "myriad-pro", Helvetica, sans_serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: left;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	color: #777;
+}
+
 /*.row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
  
  
