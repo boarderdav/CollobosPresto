@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- saved from url=(0039)https://collobos-staging.herokuapp.com/ -->
+<!-- saved from url=(0051)https://collobos-staging.herokuapp.com/distributors -->
 <html lang="en" ng-app="collobosApp"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style> <title>Collobos - Presto</title> <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL"> <!--<base href="/">--><base href="."> 
 <link rel="shortcut icon" href="Images/favicon.ico">
-<link rel="stylesheet" href="Stylesheets/vendor.bb380458.css"> <link rel="stylesheet" href="Stylesheets/app.00b932f7.css">  
+<link rel="stylesheet" href="Stylesheets/vendor.bb380458.css"> 
+<link rel="stylesheet" href="Stylesheets/app.00b932f7.css">   
 </head>
-
 <body> <!--[if lt IE 7]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]--> <!-- ngInclude: 'views/shared/header.html' -->
 <div ng-include="views/shared/header.html" ng-controller="HeaderCtrl" class="hidden-xs">
 <div class="pure-container" data-effect="pure-effect-slide">
@@ -148,71 +148,120 @@
 </div> <!-- ngView:  -->
 
 
-<div class="site-content">
-<div class="header-slider">
-  <div class="row row-align">
-    <div class="col-xs-12 col-sm-12 col-md-6 text-center">
-      <img src="Images/presto-header-logo_.png" style="max-width:300px; padding-top:40px; z-index:-1;" alt="header logo">
-      <h1>Print. AirPlay. Web Shares.</h1>
-      <h3 style="color:#808284">Enterprise. Education. Medical. Legal.</h3><br>
-      <a href="index.html"><button class="btn btn-warning">START YOUR TRIAL &gt;</button></a>
+<div class="site-content" ng-view="">
+<div class="container main-content">
+    <div class="row hero b-0">
+        <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+            <h3>Distributors</h3>
+            <!--<p class="large">Please contact a distributor below for pricing above 2500 users.</p>-->
+        </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-5 text-xs-center customers-6">
-      <img class="xs-height" src="Images/header-server-client-logos.png" alt="client logo">
-    </div>
+
+  <div class="row col-xs-12 hero b-0 mb-30">
+    <div class="col-xs-12 col-md-4 text-left">
+      <accordion close-others="true"><div class="panel-group" ng-transclude="">
+
+<div class="panel panel-default panel-open" is-open="status.linkDist">
+  <div class="panel-heading" ng-keypress="toggleOpen($event)">
+    <h4 class="panel-title">
+      <a href="#" tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" accordion-transclude="heading"><span ng-class="{&#39;text-muted&#39;: isDisabled}">
+            <h3><a href="distributors.html" style="text-decoration:none; color:black">Distributor</a></h3>
+          </span></a>
+    </h4>
+  </div>
+  <div class="panel-collapse in" collapse="!isOpen" aria-expanded="true" aria-hidden="false" style="height: auto;">
+	  <div class="panel-body" ng-transclude="">
+          <accordion-heading></accordion-heading>
+          <ul class="accordion-menu list-unstyled">
+            <li><a href="distributors.NorthAmerica.html">North America</a></li>
+            <li><a class="text-orange" href="distributors.Europe.html">Europe</a></li>
+            <li><a href="distributors.Pacific.html">Pacific</a></li>
+            <li><a href="distributors.Australia.html">Australia</a></li>
+            <li><a href="distributors.Africa.html">Africa</a></li>
+          </ul>
+        </div>
   </div>
 </div>
-<!--</div>-->
 
-<div class="container main-content">
-  <div class="col-xs-12 text-center hero hero-content row-align">
-    <div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6 text-center customers">
-      <h1 class="mt-0">Rule</h1>
-      <p>Control discovery of network services</p>
-      <p class="subtext">Type.   Identity.   Location.   Meta-Data.</p>
-      <p><a class="btn btn-default" href="index.html" role="button">LEARN MORE &gt;</a></p>
+      </div>
+      </accordion>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 col-sm-pull-6 text-center">
-      <img class="img-responsive" src="Images/monitor-1x.jpg" alt="monitor photo"> 
+    <div class="col-xs-12 col-md-8 text-center">
+      <!-- ngRepeat: i in [1,2,3,4,5,6,7,8] --><div class="col-xs-12 col-md-6 text-left" ng-repeat="i in [1,2,3,4,5,6,7,8]">
+        <ul class="list-unstyled details">
+          <li>Europe Company Name Long</li>
+          <li><a href="">www.abccompanynamelong.com</a></li>
+          <li>+1.800.123.4567</li>
+          <li><a href="">sales@abccompanynamelong.com</a></li>
+        </ul>
+      </div><!-- end ngRepeat: i in [1,2,3,4,5,6,7,8] --><div class="col-xs-12 col-md-6 text-left" ng-repeat="i in [1,2,3,4,5,6,7,8]">
+        <ul class="list-unstyled details">
+          <li>ABC Company Name Long</li>
+          <li><a href="">www.abccompanynamelong.com</a></li>
+          <li>+1.800.123.4567</li>
+          <li><a href="">sales@abccompanynamelong.com</a></li>
+        </ul>
+      </div><!-- end ngRepeat: i in [1,2,3,4,5,6,7,8] --><div class="col-xs-12 col-md-6 text-left" ng-repeat="i in [1,2,3,4,5,6,7,8]">
+        <ul class="list-unstyled details">
+          <li>ABC Company Name Long</li>
+          <li><a href="">www.abccompanynamelong.com</a></li>
+          <li>+1.800.123.4567</li>
+          <li><a href="">sales@abccompanynamelong.com</a></li>
+        </ul>
+      </div><!-- end ngRepeat: i in [1,2,3,4,5,6,7,8] --><div class="col-xs-12 col-md-6 text-left" ng-repeat="i in [1,2,3,4,5,6,7,8]">
+        <ul class="list-unstyled details">
+          <li>ABC Company Name Long</li>
+          <li><a href="">www.abccompanynamelong.com</a></li>
+          <li>+1.800.123.4567</li>
+          <li><a href="">sales@abccompanynamelong.com</a></li>
+        </ul>
+      </div><!-- end ngRepeat: i in [1,2,3,4,5,6,7,8] --><div class="col-xs-12 col-md-6 text-left" ng-repeat="i in [1,2,3,4,5,6,7,8]">
+        <ul class="list-unstyled details">
+          <li>ABC Company Name Long</li>
+          <li><a href="">www.abccompanynamelong.com</a></li>
+          <li>+1.800.123.4567</li>
+          <li><a href="">sales@abccompanynamelong.com</a></li>
+        </ul>
+      </div><!-- end ngRepeat: i in [1,2,3,4,5,6,7,8] --><div class="col-xs-12 col-md-6 text-left" ng-repeat="i in [1,2,3,4,5,6,7,8]">
+        <ul class="list-unstyled details">
+          <li>ABC Company Name Long</li>
+          <li><a href="">www.abccompanynamelong.com</a></li>
+          <li>+1.800.123.4567</li>
+          <li><a href="">sales@abccompanynamelong.com</a></li>
+        </ul>
+      </div><!-- end ngRepeat: i in [1,2,3,4,5,6,7,8] --><div class="col-xs-12 col-md-6 text-left" ng-repeat="i in [1,2,3,4,5,6,7,8]">
+        <ul class="list-unstyled details">
+          <li>ABC Company Name Long</li>
+          <li><a href="">www.abccompanynamelong.com</a></li>
+          <li>+1.800.123.4567</li>
+          <li><a href="">sales@abccompanynamelong.com</a></li>
+        </ul>
+      </div><!-- end ngRepeat: i in [1,2,3,4,5,6,7,8] --><div class="col-xs-12 col-md-6 text-left" ng-repeat="i in [1,2,3,4,5,6,7,8]">
+        <ul class="list-unstyled details">
+          <li>ABC Company Name Long</li>
+          <li><a href="">www.abccompanynamelong.com</a></li>
+          <li>+1.800.123.4567</li>
+          <li><a href="">sales@abccompanynamelong.com</a></li>
+        </ul>
+      </div><!-- end ngRepeat: i in [1,2,3,4,5,6,7,8] -->
     </div>
   </div>
-  
 
-  <div class="col-xs-12 text-center hero hero-content row-align">
-    <div class="col-xs-12 col-sm-6 col-md-6 text-center customers">
-      <h1 class="mt-0">Discover</h1>
-      <p>Services at your fingertip</p>
-      <p class="subtext">Print. Airplay. Web.</p>
-      <p><a class="btn btn-default" href="index.html" role="button">LEARN MORE &gt;</a></p>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 text-center pull-right">
-      <img class="img-responsive" src="Images/mobile-1x.jpg" alt="mobile compatible">
-    </div>
-  </div>
-
-  <div class="col-xs-12 text-center hero hero-content row-align">
-    <div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6 text-center customers">
-      <h1 class="mt-0">Protect</h1>
-      <p>All communication remains in-network</p>
-      <p class="subtext">2048 bit encryption. No content in Cloud.</p>
-      <p><a class="btn btn-default" href="https://collobos-staging.herokuapp.com/#" role="button">LEARN MORE &gt;</a></p>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 col-sm-pull-6 text-center">
-      <img class="img-responsive" src="Images/vault-1x.jpg" alt="security">
-    </div>
-    
-  </div>
 </div>
 <!--</div> -->
 
-<script async="" src="Scripts/analytics.js"></script>  <script src="Scripts/vendor.3abf3376.js"></script> <script src="Scripts/app.0e8d2638.js"></script> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+<script async="" src="Scripts/analytics.js"></script>  
+<script src="Scripts/vendor.3abf3376.js"></script> 
+<script src="Scripts/app.0e8d2638.js"></script> 
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-64921678-1', 'auto');</script> <script async="" src="Scripts/adsbygoogle.js"></script> <!-- ngInclude: 'views/shared/footer.html' -->
+      ga('create', 'UA-64921678-1', 'auto');
+      </script> 
+<script async="" src="Scripts/adsbygoogle.js"></script> 
+      <!-- ngInclude: 'views/shared/footer.html' -->
       
-      <!--<footer ng-include="views/shared/footer.html">-->
-
 <!--FOOTER SECTION STARTS HERE! --> 
  <div class="container">
   <div class="footer-social">
@@ -241,8 +290,7 @@
 </div>
 </div>
 
-<!--</footer>-->
-<script type="text/javascript">(function () {
+  <script type="text/javascript">(function () {
         return window.SIG_EXT = {};
       })()</script>
       </body>

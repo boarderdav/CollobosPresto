@@ -8,6 +8,7 @@
 	.st2{font-size:97.4329px;}
 	.st3{fill:#F6861F;}
 	.st4{fill:none;stroke:#FFFFFF;stroke-width:6.8979;stroke-linecap:round;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#333333;stroke-width:4;stroke-miterlimit:10;}
 </style>
 <font horiz-adv-x="2048">
 <!-- Calibri is either a registered trademark or a trademark of Microsoft Corporation in the United States and/or other countries. -->
@@ -2177,4 +2178,7 @@
 			l-10.4-5.6"/>
 	</g>
 </g>
+<line class="st5" x1="-250.9" y1="368.6" x2="-215.9" y2="368.6"/>
+<line class="st5" x1="-250.9" y1="384.1" x2="-215.9" y2="384.1"/>
+<line class="st5" x1="-250.9" y1="399.6" x2="-215.9" y2="399.6"/>
 </svg>
